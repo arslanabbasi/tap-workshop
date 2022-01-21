@@ -12,3 +12,12 @@ gitea:
       ENABLE_PUSH_CREATE_USER: true
       DEFAULT_PRIVATE: public
       DEFAULT_BRANCH: main
+service:
+  http:
+    type: ClusterIP
+    port: 3000
+    clusterIP:
+  ssh:
+    type: ClusterIP
+    port: 22
+    clusterIP:
