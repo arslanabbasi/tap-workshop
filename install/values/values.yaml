@@ -1,0 +1,20 @@
+#@data/values
+---
+ingress:
+  domain: 192.168.0.2.nip.io
+  contour_tls_namespace: eduk8s
+  contour_tls_secret: eduk8s-cert-tls
+harbor:
+  adminPassword: VMware1!
+  diskSize: 10Gi
+gitea:
+  adminPassword: VMware1!
+registry:
+  dockerhub: harbor-repo.vmware.com/dockerhub-proxy-cache
+git:
+  account: tanzu-end-to-end
+  branch: main
+  #! Optionally, you can specify a Github token. This will be used by Harbor's Trivy scanner to avoid hitting rate limites
+  #!   gitHubToken: <token>
+psp:
+  cluster_role: cnr-privileged
