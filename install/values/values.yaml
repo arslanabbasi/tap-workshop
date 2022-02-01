@@ -12,7 +12,7 @@ gitea:
 registry:
   dockerhub: harbor-repo.vmware.com/dockerhub-proxy-cache
 git:
-  account: tanzu-end-to-end
+  account: arslanabbasi
   branch: main
   #! Optionally, you can specify a Github token. This will be used by Harbor's Trivy scanner to avoid hitting rate limites
   #!   gitHubToken: <token>

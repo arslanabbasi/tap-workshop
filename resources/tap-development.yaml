@@ -10,7 +10,7 @@ spec:
   vendor: eduk8s.io
   difficulty: beginner
   duration: 30m
-  url: https://github.com/tanzu-end-to-end/tap-workshop
+  url: https://github.com/arslanabbasi/tap-workshop
   content:
     image: 192.168.0.2:30003/tanzu-e2e/eduk8s-tap-workshop:latest
     files: #@ "github.com/{}/tap-workshop?ref=development".format(data.values.git.account)
