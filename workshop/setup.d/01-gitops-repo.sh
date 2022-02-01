@@ -16,5 +16,5 @@ git add .
 git commit -a -m "Initial Commit"
 
 #git remote add origin http://gitea_admin:$GITEA_PASSWORD@gitea.${INGRESS_DOMAIN}/gitea_admin/$REPO_NAME.git
-git remote add origin http://gitea_admin:$GITEA_PASSWORD@172.14.101.72:3000/gitea_admin/$REPO_NAME.git
+git remote add origin http://gitea_admin:$GITEA_PASSWORD@<gitea-url>/gitea_admin/$REPO_NAME.git
 git push -u origin main
