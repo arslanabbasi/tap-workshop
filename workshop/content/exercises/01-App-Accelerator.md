@@ -27,7 +27,7 @@ If you are familiar with the [Spring Boot Initializr](https://start.spring.io/) 
 Check out Application Accelerator:
 
 ```dashboard:open-url
-url: https://tap-gui.{{ ingress_domain }}/create
+url: https://192.168.0.2<tap-port>/create
 ```
 
 Alana the operator has preloaded the accelerator with a variety of projects ranging from Spring Cloud Functions to Node.js. As a developer, Cody is going to select a project that matches the language and runtime profile that he wants to develop in.

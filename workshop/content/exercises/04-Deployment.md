@@ -8,13 +8,13 @@ Use the following link to access the Harbor registry:
 
 ```dashboard:create-dashboard
 name: Harbor
-url: https://harbor.{{ ingress_domain }}
+url: https://192.168.0.2:30003
 ```
 
 You will be redirected to the sign-in page.
 
 * Username: ```admin```
-* password ```{{ ENV_HARBOR_PASSWORD }}```
+* password ```VMware1!```
 
 Once you are logged in, click on **tap** in the Projects list, and then click on the **tap/spring-sensors** repo. You will see artifacts for the spring-sensors application. If you want to verify which image is yours, you can check the sha256 for your container image with this command:
 
@@ -44,13 +44,13 @@ Cody can now use the Tanzu Application Platform GUI to get more information abou
 
 ```dashboard:open-url
 name: Live
-url: https://tap-gui.{{ ingress_domain }}
+url: http://192.168.0.2:<tap-port>
 ```
 
 TAP GUI provides a great deal of information about running software deployed through TAP, but Cody is particularly interested in the App Live View. It provides realtime visibility into his new application. Navigate to App Live View:
 
 ```dashboard:open-url
-url: https://tap-gui.{{ ingress_domain }}/app-live-view/apps/spring-sensors
+url: http://192.168.0.2:<tap-port>/app-live-view/apps/spring-sensors
 ```
 
 Click on the top pod row. On the subsequent screen, you can use the "Information Category" dropdown to navigate through detailed troubleshooting data on the Spring Sensors app.
