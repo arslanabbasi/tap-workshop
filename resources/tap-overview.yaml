@@ -13,7 +13,7 @@ spec:
   url: https://github.com/arslanabbasi/tap-workshop
   content:
     image: 192.168.0.2:30003/tanzu-e2e/eduk8s-tap-workshop:latest
-    files: #@ "github.com/{}/tap-workshop?ref={}".format(data.values.git.account,data.values.git.branch)
+    files: <workshop-gitea-url>
   session:
     env:
       - name: GITEA_PASSWORD
