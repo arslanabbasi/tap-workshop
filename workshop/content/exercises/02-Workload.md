@@ -7,7 +7,7 @@ The workflow here is that Cody downloads the accelerator template to his local m
 For this demo, we'll use the Tanzu command line interface instead of the Web UI to download the Spring Sensors application accelerator. The Tanzu CLI is your one-stop shop for interacting with the Tanzu Application Platform.
 
 ```execute
-tanzu accelerator generate spring-sensors-rabbit --server-url https://accelerator.{{ ingress_domain }} --options='{"gitUrl": "'"$GITREPO"'","gitBranch":"main"}'
+tanzu accelerator generate spring-sensors-rabbit --server-url <accelerator-url> --options='{"gitUrl": "'"$GITREPO"'","gitBranch":"main"}'
 ```
 
 Unzip the repo into your local file system:

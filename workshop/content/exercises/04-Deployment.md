@@ -8,15 +8,15 @@ Use the following link to access the Harbor registry:
 
 ```dashboard:create-dashboard
 name: Harbor
-url: https://192.168.0.2:30003
+url: https://harbor.lab-harbor.com
 ```
 
 You will be redirected to the sign-in page.
 
-* Username: ```admin```
+* Username: ```tap-hol```
 * password ```VMware1!```
 
-Once you are logged in, click on **tap** in the Projects list, and then click on the **tap/spring-sensors** repo. You will see artifacts for the spring-sensors application. If you want to verify which image is yours, you can check the sha256 for your container image with this command:
+Once you are logged in, click on **workloads** in the Projects list, and then click on the **workloads/repo/spring-sensors-tap-demos-w01-s001** repo under Repositories. You will see artifacts for the spring-sensors application. If you want to verify which image is yours, you can check the sha256 for your container image with this command:
 
 ```execute
 kp image list
